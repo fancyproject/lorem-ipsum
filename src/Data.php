@@ -1,9 +1,6 @@
 <?php
 
-namespace App\Models\LoremIpsum\Request;
-
-
-use App\Models\LoremIpsum;
+namespace Fancyproject\LoremIpsum;
 
 class Data
 {
@@ -15,7 +12,7 @@ class Data
     /**
      * @var string
      */
-    private $type = LoremIpsum::WORDS;
+    private $type = TextBuilder::WORDS;
 
     /**
      * @var bool
@@ -28,7 +25,7 @@ class Data
      * @param string $type
      * @param bool $startWithLorem
      */
-    public function __construct($amount, $type = LoremIpsum::WORDS, $startWithLorem = true)
+    public function __construct($amount, $type = TextBuilder::WORDS, $startWithLorem = true)
     {
         $this->amount = $amount;
         $this->type = $type;

@@ -1,11 +1,8 @@
 <?php
 
-namespace App\Models;
+namespace Fancyproject\LoremIpsum;
 
-use App\Models\LoremIpsum\Request\Data;
-use App\Models\LoremIpsum\RequestBuilder;
-
-class LoremIpsum
+class TextBuilder
 {
     const PARAGRAPHS = 'paras';
     const WORDS = 'words';

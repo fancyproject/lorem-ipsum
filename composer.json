@@ -1,9 +1,9 @@
 {
     "name": "fancyproject/lorem-ipsum",
-    "description": "Generate",
+    "description": "PHP Package for http://www.lipsum.com generator. Use http request to get data with custom types and length.",
     "keywords": ["lorem","ipsum"],
     "homepage": "http://github.com/fancyproject/lorem-ipsum",
-    "license": "BSD-3-Clause",
+    "license": "MIT",
     "authors": [
         {
             "name": "Jakub Duda",
@@ -11,6 +11,8 @@
         }
     ],
     "autoload": {
-        "psr-0": { "Fancyproject\\LoremIpsum": "src/" }
+        "psr-4": {
+            "Fancyproject\\LoremIpsum\\": "src/"
+        }
     }
 }

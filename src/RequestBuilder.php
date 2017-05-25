@@ -1,8 +1,6 @@
 <?php
 
-namespace App\Models\LoremIpsum;
-
-use App\Models\LoremIpsum\Request\Data;
+namespace Fancyproject\LoremIpsum;
 
 class RequestBuilder
 {
