@@ -26,6 +26,6 @@ Bytes
 Disable "Start with 'Lorem ipsum dolor sit amet...'"
 ```
     $loremIpsum = new \Fancyproject\LoremIpsum\TextBuilder();
-    $loremIpsum->disableStartWithLorem()
+    $loremIpsum->disableStartWithLorem();
     $words = $loremIpsum->lists(6);
 ```
