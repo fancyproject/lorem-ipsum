@@ -1,0 +1,16 @@
+{
+    "name": "fancyproject/lorem-ipsum",
+    "description": "Generate",
+    "keywords": ["lorem","ipsum"],
+    "homepage": "http://github.com/fancyproject/lorem-ipsum",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Jakub Duda",
+            "email": "kuba@fancyproject.pl"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "Fancyproject\\LoremIpsum": "src/" }
+    }
+}
