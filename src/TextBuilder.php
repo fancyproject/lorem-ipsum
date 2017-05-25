@@ -47,7 +47,7 @@ class TextBuilder
      */
     public function words($count)
     {
-        return $this->getData(new Data($count, self::WORDS, $this->startWithLorem));
+        return $this->getData(new RequestData($count, self::WORDS, $this->startWithLorem));
     }
 
     /**
@@ -56,7 +56,7 @@ class TextBuilder
      */
     public function paragraphs($count)
     {
-        return $this->getData(new Data($count, self::PARAGRAPHS, $this->startWithLorem));
+        return $this->getData(new RequestData($count, self::PARAGRAPHS, $this->startWithLorem));
     }
 
     /**
@@ -65,14 +65,14 @@ class TextBuilder
      */
     public function bytes($count)
     {
-        return $this->getData(new Data($count, self::BYTES, $this->startWithLorem));
+        return $this->getData(new RequestData($count, self::BYTES, $this->startWithLorem));
     }
 
     /**
-     * @param Data $requestData
+     * @param RequestData $requestData
      * @return string
      */
-    private function getData(Data $requestData)
+    private function getData(RequestData $requestData)
     {
         return $this->requestBuilder->sendRequest($requestData);
     }

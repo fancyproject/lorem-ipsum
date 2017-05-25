@@ -2,7 +2,7 @@
 
 namespace Fancyproject\LoremIpsum;
 
-class Data
+class RequestData
 {
     /**
      * @var int

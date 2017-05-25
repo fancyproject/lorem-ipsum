@@ -31,7 +31,7 @@ class RequestBuilder
         return $this->format;
     }
 
-    public function sendRequest(Data $data)
+    public function sendRequest(RequestData $data)
     {
         $options = array(
             'http' => array(
@@ -40,8 +40,6 @@ class RequestBuilder
                 'content' => http_build_query($data->getData())
             )
         );
-
-//        dump($data);
 
         $context = stream_context_create($options);
         $result = file_get_contents($this->baseurl . $this->getFormat(), false, $context);
